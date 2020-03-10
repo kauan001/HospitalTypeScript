@@ -1,24 +1,23 @@
+  
 "use strict";
-var hospital;
-(function (hospital) {
-    class Pessoa {
-        constructor(nome, cpf) {
-            this.cpf = cpf;
-            this.nome = nome;
+var pessoa;
+(function (pessoa) {
+    var Pessoa = /** @class */ (function () {
+        function Pessoa() {
         }
-        getnome() {
+        Pessoa.prototype.getnome = function () {
             return this.nome;
         };
-        setnome(nome) {
+        Pessoa.prototype.setnome = function (nome) {
             this.nome = nome;
         };
-        getcpf() {
+        Pessoa.prototype.getcpf = function () {
             return this.cpf;
         };
-        setcpf(cpf) {
+        Pessoa.prototype.setcpf = function (cpf) {
             this.cpf = cpf;
         };
-       
-    }
-    hospital.Pessoa = Pessoa;
-})(hospital || (hospital = {}));
+        return Pessoa;
+    }());
+    pessoa.Pessoa = Pessoa;
+})(pessoa || (pessoa = {}));

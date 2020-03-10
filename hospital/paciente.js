@@ -12,8 +12,8 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var hospital;
-(function (hospital) {
+var pessoa;
+(function (pessoa) {
     var Paciente = /** @class */ (function (_super) {
         __extends(Paciente, _super);
         function Paciente() {
@@ -26,6 +26,6 @@ var hospital;
             this.codPaciente = cod;
         };
         return Paciente;
-    }(hospital.Pessoa));
-    hospital.Paciente = Paciente;
-})(hospital || (hospital = {}));
+    }(pessoa.Pessoa));
+    pessoa.Paciente = Paciente;
+})(pessoa || (pessoa = {}));

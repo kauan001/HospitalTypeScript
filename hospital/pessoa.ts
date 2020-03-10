@@ -1,6 +1,4 @@
-
-
-namespace hospital{
+namespace pessoa{
     export class Pessoa{
         private nome: string;
         private cpf: string;

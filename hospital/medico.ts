@@ -1,5 +1,6 @@
-namespace hospital{
-    export class Medico extends hospital.Funcionario{
+  
+namespace pessoa{
+    export class Medico extends Funcionario{
         private crm: number;
         private especialidade: string;
 

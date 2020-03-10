@@ -1,5 +1,5 @@
-namespace hospital{
-    export class Enfermeiro extends hospital.Funcionario{
+namespace pessoa{
+    export class Enfermeiro extends Funcionario{
         private coren : number;
 
         getcoren(){

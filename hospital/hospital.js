@@ -1,37 +1,38 @@
+
 "use strict";
-var hospital;
-(function (hospital) {
-    class Hospital {
-        constructor() {
+var pessoa;
+(function (pessoa) {
+    var Hospital = /** @class */ (function () {
+        function Hospital() {
             this.enfermeiros = [];
             this.medicos = [];
             this.pacientes = [];
         }
-        getNomeHospital() {
-            return this.nomeHospital;
-        }
-        setNomeHospital(nome) {
-            this.nomeHospital = nome;
-        }
-       addEnfermeiros(enfermeiros) {
+        Hospital.prototype.getnome = function () {
+            return this.nome;
+        };
+        Hospital.prototype.setnome = function (nome) {
+            this.nome = nome;
+        };
+        Hospital.prototype.addEnfermeiros = function (enfermeiros) {
             this.enfermeiros.push(enfermeiros);
-        }
-        getEnfermeiros() {
+        };
+        Hospital.prototype.getEnfermeiros = function () {
             return this.enfermeiros;
-        }
-        addMedicos(medicos) {
+        };
+        Hospital.prototype.addMedicos = function (medicos) {
             this.medicos.push(medicos);
-        }
-        getmedicos() {
+        };
+        Hospital.prototype.getmedicos = function () {
             return this.medicos;
-        }
-        addPacientes(pacientes) {
+        };
+        Hospital.prototype.addPacientes = function (pacientes) {
             this.pacientes.push(pacientes);
-        }
-        getpacientes = function () {
+        };
+        Hospital.prototype.getpacientes = function () {
             return this.pacientes;
-        }
-       
-    }
-    hospital.Hospital = Hospital;
-})(hospital || (hospital = {}));
+        };
+        return Hospital;
+    }());
+    pessoa.Hospital = Hospital;
+})(pessoa || (pessoa = {}));

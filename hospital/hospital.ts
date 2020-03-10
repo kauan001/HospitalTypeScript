@@ -1,4 +1,5 @@
-namespace hospital{
+  
+namespace pessoa{
     export class Hospital{
         private nome: string;
         private enfermeiros: Array <Enfermeiro> = [];
